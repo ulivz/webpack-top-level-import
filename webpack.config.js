@@ -5,8 +5,9 @@ const path = require("path");
  */
 module.exports = {
   mode: "production",
-  entry: "./src/index.js",
+  entry: "./src/a.js",
   devtool: 'source-map',
+  target: ['web', 'es6'],
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
