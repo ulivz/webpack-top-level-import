@@ -1,11 +1,5 @@
-import { b } from "./b";
-import { c } from "./c";
-import { sleep } from "./e";
+import { B } from "./b.js";
+import { C } from "./c.js";
 
-document.body.appendChild(b());
-
-await sleep(300);
-
-document.body.appendChild(c());
-
-export {};
+console.log("Hello", B, C);
+console.timeEnd('a');

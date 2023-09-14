@@ -1,9 +1,7 @@
-import { sleep } from "./e";
+import { sleep } from "./d.js";
 
-await sleep(100);
+console.time('b');
+await sleep(1000);
+console.timeEnd('b');
 
-export function b() {
-  const element = document.createElement("div");
-  element.innerHTML = "Hello, Webpack!";
-  return element;
-}
+export const B = 'TLA (b)';

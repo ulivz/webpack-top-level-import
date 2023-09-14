@@ -1,5 +1,7 @@
-import { d } from "./d";
+import { sleep } from "./d.js";
 
-export function c() {
-  return d();
-}
+console.time('c');
+await sleep(500);
+console.timeEnd('c');
+
+export const C = 'TLA (c)';
